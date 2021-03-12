@@ -29,6 +29,7 @@ public class CoinController
         {
             total = total + (int)(c.getValue() * c.getQuantity());
         }
+        System.out.println(myList.toString());
         System.out.println("The piggy bank holds " + total);
         return new ResponseEntity<>(myList, HttpStatus.OK);
     }
